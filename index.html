@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Year Together | Our Anniversary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Local Audio Element -->
+    <audio id="bg-music" loop>
+        <source src="Arctic Monkeys - I Wanna Be Yours.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="cursor" class="cursor"></div>
+    <div id="cursor-follower" class="cursor-follower"></div>
+
+    <div class="theme-toggle" id="theme-toggle">
+        <span class="icon">🌙</span>
+    </div>
+
+    <div class="music-control" id="music-control">
+        <span class="icon">🎵</span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-in">1 Year With You ❤️</h1>
+            <p class="hero-subtitle animate-in">Since April 4, 2025</p>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <p>Scroll down</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section" id="countdown">
+        <div class="container">
+            <h2 class="section-title">Every Second Counts...</h2>
+            <div class="countdown-grid" id="countdown-timer">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <p>Days</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <p>Hours</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <p>Minutes</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <p>Seconds</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Photo Gallery -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Captured Moments</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item animate-scroll">
+                    <img src="1.jpeg" alt="Memory 1">
+                    <div class="gallery-hover">View Photo</div>
+                </div>
+                <div class="gallery-item animate-scroll">
+                    <img src="2.jpeg" alt="Memory 2">
+                    <div class="gallery-hover">View Photo</div>
+                </div>
+                <div class="gallery-item animate-scroll">
+                    <img src="3.jpeg" alt="Memory 3">
+                    <div class="gallery-hover">View Photo</div>
+                </div>
+                <div class="gallery-item animate-scroll">
+                    <img src="4.jpeg" alt="Memory 4">
+                    <div class="gallery-hover">View Photo</div>
+                </div>
+                <div class="gallery-item animate-scroll">
+                    <img src="5.jpeg" alt="Memory 5">
+                    <div class="gallery-hover">View Photo</div>
+                </div>
+                <div class="gallery-item animate-scroll">
+                    <img src="6.jpeg" alt="Memory 6">
+                    <div class="gallery-hover">View Photo</div>
+                </div>
+                <div class="gallery-item animate-scroll">
+                    <img src="7.jpeg" alt="Memory 7">
+                    <div class="gallery-hover">View Photo</div>
+                </div>
+                <div class="gallery-item animate-scroll">
+                    <img src="8.jpeg" alt="Memory 8">
+                    <div class="gallery-hover">View Photo</div>
+                </div>
+                <div class="gallery-item animate-scroll">
+                    <img src="9.jpeg" alt="Memory 9">
+                    <div class="gallery-hover">View Photo</div>
+                </div>
+                <div class="gallery-item animate-scroll">
+                    <img src="10.jpeg" alt="Memory 10">
+                    <div class="gallery-hover">View Photo</div>
+                </div>
+                <div class="gallery-item animate-scroll">
+                    <img src="11.jpeg" alt="Memory 11">
+                    <div class="gallery-hover">View Photo</div>
+                </div>
+                <div class="gallery-item animate-scroll">
+                    <img src="12.jpeg" alt="Memory 12">
+                    <div class="gallery-hover">View Photo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid Section Video -->
+    <section class="mid-video-section" id="story-video">
+        <div class="container">
+            <h2 class="section-title">A Glimpse of Us ❤️</h2>
+            <div class="video-container animate-scroll">
+                <video controls class="mid-video">
+                    <source src="ne.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Modal -->
+    <div id="photo-modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img id="modal-img" class="modal-content">
+    </div>
+
+    <!-- Confession Section -->
+    <section class="confession-section" id="confession">
+        <div class="container">
+            <h2 class="section-title">My Tiny Confession</h2>
+            <div class="confession-content animate-scroll">
+                <p>I have to tell you something... something I don't say nearly enough. From the moment I saw you, I knew you were different. You have this way of making everything around you brighter, including me. Loving you isn't just a choice; it's the easiest thing I've ever done. You are my greatest adventure and my favorite person to dream with. I am so deeply, incurably in love with you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flip Book Video Section -->
+    <section class="flipbook-section" id="flipbook">
+        <div class="container">
+            <h2 class="section-title">A Little Surprise...</h2>
+            <div class="video-container">
+                <video controls class="flipbook-video">
+                    <source src="fc2db7fdb52541b3b835b14c7b21906b.HD-1080p-7.2Mbps-11041004.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ending Section -->
+    <section class="ending-section" id="ending">
+        <div class="container">
+            <h2 class="section-title">Before You Go...</h2>
+            <div class="ending-content animate-scroll">
+                <p class="ending-quote">“If I had to choose again, <br> I’d still choose you.”</p>
+                <button class="surprise-btn" id="surprise-btn">One last thing ❤️</button>
+            </div>
+
+            <div id="surprise-overlay" class="surprise-overlay">
+                <div class="surprise-content">
+                    <h2>I Love You More Than Words Can Say!</h2>
+                    <p>Will you continue this beautiful journey with me?</p>
+                    <button class="close-surprise" id="close-surprise">Forever ❤️</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Particles Container -->
+    <div id="particles-js"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
